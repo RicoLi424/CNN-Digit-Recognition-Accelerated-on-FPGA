@@ -1,20 +1,4 @@
-/*------------------------------------------------------------------------
- *
- *  Copyright (c) 2021 by Bo Young Kang, All rights reserved.
- *
- *  File name  : fully_connected.v
- *  Written by : Kang, Bo Young
- *  Written on : Oct 13, 2021
- *  Version    : 21.2
- *  Design     : Fully Connected Layer for CNN
- *
- *------------------------------------------------------------------------*/
-
-/*-------------------------------------------------------------------
- *  Module: fully_connected
- *------------------------------------------------------------------*/
-
- module fully_connected #(parameter INPUT_NUM = 48, OUTPUT_NUM = 10, DATA_BITS = 8) (
+module fully_connected #(parameter INPUT_NUM = 48, OUTPUT_NUM = 10, DATA_BITS = 8) (
    input clk,
    input rst_n,
    input valid_in,

@@ -73,7 +73,6 @@ class CNN(torch.nn.Module):
         # Fully Connected Layer
         # 625 inputs -> 10 outputs
         self.fc2 = torch.nn.Linear(625, 10, bias=True)
-        # 전결합층 한정으로 가중치 초기화
         torch.nn.init.xavier_uniform_(self.fc2.weight)
 
     def forward(self, x):

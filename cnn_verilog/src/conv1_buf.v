@@ -1,21 +1,4 @@
-/*------------------------------------------------------------------------
- *
- *  Copyright (c) 2021 by Bo Young Kang, All rights reserved.
- *
- *  File name  : conv1_buf.v
- *  Written by : Kang, Bo Young
- *  Written on : Sep 30, 2021
- *  Version    : 21.2
- *  Design     : 1st Convolution Layer for CNN MNIST dataset
- *               Input Buffer
- *
- *------------------------------------------------------------------------*/
-
-/*-------------------------------------------------------------------
- *  Module: conv1_buf
- *------------------------------------------------------------------*/
- 
- module conv1_buf #(parameter WIDTH = 28, HEIGHT = 28, DATA_BITS = 8)(
+module conv1_buf #(parameter WIDTH = 28, HEIGHT = 28, DATA_BITS = 8)(
    input clk,
    input rst_n,
    input [DATA_BITS - 1:0] data_in,

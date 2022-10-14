@@ -1,0 +1,20 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog {C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog/maxpool_relu.v}
+vlog -vlog01compat -work work +incdir+C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog {C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog/conv2_buf.v}
+vlog -vlog01compat -work work +incdir+C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog {C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog/conv1_layer.v}
+vlog -vlog01compat -work work +incdir+C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog {C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog/conv1_buf.v}
+vlog -vlog01compat -work work +incdir+C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog {C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog/comparator.v}
+vlog -vlog01compat -work work +incdir+C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog {C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog/top_tb.v}
+vlog -vlog01compat -work work +incdir+C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog {C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog/fully_connected.v}
+vlog -vlog01compat -work work +incdir+C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog {C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog/conv2_layer.v}
+vlog -vlog01compat -work work +incdir+C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog {C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog/conv2_calc_3.v}
+vlog -vlog01compat -work work +incdir+C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog {C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog/conv2_calc_2.v}
+vlog -vlog01compat -work work +incdir+C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog {C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog/conv2_calc_1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog {C:/Users/likangli/Desktop/CNN-Implementation-in-Verilog-master/cnn_verilog/conv1_calc.v}
+

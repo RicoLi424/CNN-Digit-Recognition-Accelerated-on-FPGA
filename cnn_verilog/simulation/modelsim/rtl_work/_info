@@ -1,0 +1,296 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/CNN_Implementation_in_Verilog/cnn_verilog/simulation/modelsim
+vcomparator
+Z1 !s110 1652350910
+!i10b 1
+!s100 bfzn`E5QIniXlTMoomXJF3
+ImR1LIJET527i60DJUT]QA1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1652344464
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/comparator.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/comparator.v
+Z3 L0 17
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1652350910.000000
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/comparator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/comparator.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog
+Z8 tCvgOpt 0
+vconv1_buf
+R1
+!i10b 1
+!s100 a4Nm7Pi;7jWMT6lNb`MAo3
+Iej8gI37Ac`jnj8E>9KAgK1
+R2
+R0
+w1652191040
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_buf.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_buf.v
+Z9 L0 18
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_buf.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_buf.v|
+!i113 1
+R6
+R7
+R8
+vconv1_calc
+R1
+!i10b 1
+!s100 jafhXR0flLXZ1c@76GEVK2
+IWQRh8adZ6;b:`ILEjRALm0
+R2
+R0
+w1652168103
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_calc.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_calc.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_calc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_calc.v|
+!i113 1
+R6
+R7
+R8
+vconv1_layer
+R1
+!i10b 1
+!s100 mC4K2Xkf3QVHgFOY4ikcC0
+I2dl6bU0Q36Cnjj[I^oil43
+R2
+R0
+w1650982977
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_layer.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_layer.v
+R3
+R4
+r1
+!s85 0
+31
+Z10 !s108 1652350909.000000
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_layer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_layer.v|
+!i113 1
+R6
+R7
+R8
+vconv2_buf
+Z11 !s110 1652350909
+!i10b 1
+!s100 c_?nI`5cK0Ih^HZZF[V>L2
+IaSYlEQQofX2Uz=ESPMfBI3
+R2
+R0
+w1651246907
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_buf.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_buf.v
+R3
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_buf.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_buf.v|
+!i113 1
+R6
+R7
+R8
+vconv2_calc_1
+R1
+!i10b 1
+!s100 ?4@81K3>NmWdW2bZE6E170
+I1g?1m[:34SUf[IjU16mUY2
+R2
+R0
+w1650885686
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_1.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_1.v
+R9
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_1.v|
+!i113 1
+R6
+R7
+R8
+vconv2_calc_2
+R1
+!i10b 1
+!s100 8]5_Z1Q>oYcaUZUm;9W9f1
+IW6jzfMidSQKk`?e`Ze6kg1
+R2
+R0
+w1651247415
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_2.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_2.v
+R9
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_2.v|
+!i113 1
+R6
+R7
+R8
+vconv2_calc_3
+R1
+!i10b 1
+!s100 >l3gh_9elF^>Y6PFg9a`V2
+I==8Y2S4Gm3QH_Z=LMT3UO2
+R2
+R0
+w1650886050
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_3.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_3.v
+R9
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_3.v|
+!i113 1
+R6
+R7
+R8
+vconv2_layer
+R1
+!i10b 1
+!s100 k25XAXG5RQh>B`R@3;f8X1
+IjUl7Hf<l<B@:SlKV=If^R3
+R2
+R0
+w1652171376
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_layer.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_layer.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_layer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_layer.v|
+!i113 1
+R6
+R7
+R8
+vfully_connected
+R1
+!i10b 1
+!s100 >C]>>A9N3FgnfTfF2OAz62
+ISzD]^GgNGTD90k<CUjl382
+R2
+R0
+w1652342185
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/fully_connected.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/fully_connected.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/fully_connected.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/fully_connected.v|
+!i113 1
+R6
+R7
+R8
+vmaxpool_relu
+R11
+!i10b 1
+!s100 3DFoz2cG6IOAjELjMUA<b2
+Im8j9GaS>hZe?Rzc1V8U]M3
+R2
+R0
+w1652170263
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/maxpool_relu.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/maxpool_relu.v
+L0 19
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/maxpool_relu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/maxpool_relu.v|
+!i113 1
+R6
+R7
+R8
+vtop
+R11
+!i10b 1
+!s100 Fo`Zaoa:zV<4RnNL:^<4z3
+ICHzkEa4Z:X8G@M>FQ5Ifn2
+R2
+R0
+w1652192784
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/top.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/top.v
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/top.v|
+!i113 1
+R6
+R7
+R8
+vtop_tb
+R1
+!i10b 1
+!s100 [3RX@8>;AC9A@=[BOZ3c42
+I`59A]5DSA8o:`gFRz1FUi2
+R2
+R0
+w1652348893
+8D:/CNN_Implementation_in_Verilog/cnn_verilog/top_tb.v
+FD:/CNN_Implementation_in_Verilog/cnn_verilog/top_tb.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/CNN_Implementation_in_Verilog/cnn_verilog/top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog|D:/CNN_Implementation_in_Verilog/cnn_verilog/top_tb.v|
+!i113 1
+R6
+R7
+R8

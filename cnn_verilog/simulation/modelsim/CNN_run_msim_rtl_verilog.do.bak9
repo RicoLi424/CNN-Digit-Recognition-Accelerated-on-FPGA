@@ -1,0 +1,28 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/top.v}
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/maxpool_relu.v}
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_buf.v}
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_layer.v}
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_buf.v}
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/comparator.v}
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/fully_connected.v}
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_layer.v}
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_3.v}
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_2.v}
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_1.v}
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_calc.v}
+
+vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/top_tb_1000.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  top_tb_1000
+
+add wave *
+view structure
+view signals
+run -all

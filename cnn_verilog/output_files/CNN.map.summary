@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Thu May 12 16:36:03 2022
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : CNN
+Top-level Entity Name : top
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 5963
+Total pins : 15
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 163
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

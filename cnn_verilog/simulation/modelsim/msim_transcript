@@ -1,0 +1,178 @@
+# Reading D:/quartus II 17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do CNN_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/quartus II 17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:49 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 18:21:49 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/maxpool_relu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:49 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/maxpool_relu.v 
+# -- Compiling module maxpool_relu
+# 
+# Top level modules:
+# 	maxpool_relu
+# End time: 18:21:49 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_buf.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:49 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_buf.v 
+# -- Compiling module conv2_buf
+# 
+# Top level modules:
+# 	conv2_buf
+# End time: 18:21:49 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_layer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:49 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_layer.v 
+# -- Compiling module conv1_layer
+# 
+# Top level modules:
+# 	conv1_layer
+# End time: 18:21:50 on May 12,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_buf.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:50 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_buf.v 
+# -- Compiling module conv1_buf
+# 
+# Top level modules:
+# 	conv1_buf
+# End time: 18:21:50 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/comparator.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:50 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/comparator.v 
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# End time: 18:21:50 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/fully_connected.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:50 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/fully_connected.v 
+# -- Compiling module fully_connected
+# 
+# Top level modules:
+# 	fully_connected
+# End time: 18:21:50 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_layer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:50 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_layer.v 
+# -- Compiling module conv2_layer
+# 
+# Top level modules:
+# 	conv2_layer
+# End time: 18:21:50 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_3.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:50 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_3.v 
+# -- Compiling module conv2_calc_3
+# 
+# Top level modules:
+# 	conv2_calc_3
+# End time: 18:21:50 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:50 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_2.v 
+# -- Compiling module conv2_calc_2
+# 
+# Top level modules:
+# 	conv2_calc_2
+# End time: 18:21:50 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:50 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/conv2_calc_1.v 
+# -- Compiling module conv2_calc_1
+# 
+# Top level modules:
+# 	conv2_calc_1
+# End time: 18:21:50 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_calc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:50 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/conv1_calc.v 
+# -- Compiling module conv1_calc
+# 
+# Top level modules:
+# 	conv1_calc
+# End time: 18:21:50 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog {D:/CNN_Implementation_in_Verilog/cnn_verilog/top_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:21:50 on May 12,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/CNN_Implementation_in_Verilog/cnn_verilog" D:/CNN_Implementation_in_Verilog/cnn_verilog/top_tb.v 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 18:21:50 on May 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  top_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" top_tb 
+# Start time: 18:21:51 on May 12,2022
+# Loading work.top_tb
+# Loading work.top
+# Loading work.conv1_layer
+# Loading work.conv1_buf
+# Loading work.conv1_calc
+# Loading work.maxpool_relu
+# Loading work.conv2_layer
+# Loading work.conv2_buf
+# Loading work.conv2_calc_1
+# Loading work.conv2_calc_2
+# Loading work.conv2_calc_3
+# Loading work.fully_connected
+# Loading work.comparator
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: likangli  Hostname: DESKTOP-K4EFMQO  ProcessID: 15640
+#           Attempting to use alternate WLF file "./wlft9beqcy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft9beqcy
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint  \
+sim:/top_tb/u_top/comparator/buffer
+restart -f
+run -all
+# End time: 18:53:21 on May 12,2022, Elapsed time: 0:31:30
+# Errors: 0, Warnings: 2

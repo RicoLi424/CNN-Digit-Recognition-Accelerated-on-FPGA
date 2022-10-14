@@ -1,7 +1,3 @@
-############# MNIST Data Set Load & CNN Implementation ####################
-
-# Reference : https://github.com/pytorch/examples/blob/master/mnist/main.py
-
 from __future__ import print_function
 import argparse
 import torch
@@ -167,7 +163,6 @@ def sample_test():
     np_img = np.array(img)
     np_img_re = np.reshape(np_img, (1,1,28,28))
     
-    # 0 - 255 => 0 - 1 로 정규화, np.array => tensor 변환
     data = Variable(torch.tensor((np_img_re / 255), dtype = torch.float32))
     
     # Output of feedforwarding

@@ -76,7 +76,7 @@
 					exp_data[15]*weight_3[15] + exp_data[16]*weight_3[16] + exp_data[17]*weight_3[17] + exp_data[18]*weight_3[18] + exp_data[19]*weight_3[19] + 
 					exp_data[20]*weight_3[20] + exp_data[21]*weight_3[21] + exp_data[22]*weight_3[22] + exp_data[23]*weight_3[23] + exp_data[24]*weight_3[24];
  
- // 为什么可以直接取前12位？
+ // 直接取前12位
  assign conv_out_1 = calc_out_1[19:8] + exp_bias[0];
  assign conv_out_2 = calc_out_2[19:8] + exp_bias[1];
  assign conv_out_3 = calc_out_3[19:8] + exp_bias[2];

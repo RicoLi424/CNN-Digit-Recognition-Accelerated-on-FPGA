@@ -1,9 +1,8 @@
 import torch
 import torch.nn as nn
 
-# 배치 크기 × 채널 × 높이(height) × 너비(widht)의 크기의 텐서를 선언
 inputs = torch.Tensor(1, 1, 28, 28)
-print('텐서의 크기 : {}'.format(inputs.shape))
+print('张量大小 : {}'.format(inputs.shape))
 
 conv1 = nn.Conv2d(1, 32, 3, padding=1)
 print('First Convolution Shape')

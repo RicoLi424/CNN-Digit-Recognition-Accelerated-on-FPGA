@@ -1,4 +1,5 @@
 # CNN-Digit-Recognition-on-FPGA
+**Explanation on .v codes**  
 **Convolutional Layer 1**  
 `-clk:` Clock input.  
 `-rst_n:` Asynchronous reset signal, active low.  

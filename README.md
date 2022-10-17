@@ -27,7 +27,7 @@
 
      Use the system command $readmemh to read the weights and biases text file and store them in a two-dimensional array. The 25 data output by the Buffer layer in each round is used as the input of the convolution calculation, and the convolution operation is performed with the weight value, and then the bias is added to obtain the output. Although the handwritten digit image is a black and white picture and only needs a single channel, in order to not lose generality and improve accuracy, we still uses three channels to convolve it, so three sets of different weights and convolutions are used for 25 sets of data separately, and three sets of convolution operation outputs are obtained.
      
-** 1st Maxpool_relu **
+**1st Maxpool_relu**  
 `valid_in:` Connected to the valid output signal of the previous convolutional layer, the module performs two different operations according to the value of `valid_in`.
 `conv_out_#:` Take the 3 12-bit convolution outputs of the previous convolutional layer as input data.
 `max_value_#:` For each maximum pooling operation, the maximum value is selected from a range of (2, 2) in the feature map, and the final output is obtained after passing it through the ReLU function. Because there are 3 channels, there are 3 outputs. .

@@ -1,8 +1,15 @@
 # CNN-Digit-Recognition-on-FPGA
 **_Explanation on .v modules_** 
-  
+
+**top**
+Top module for single digit testcase.
+
+**top_1000**
+Top module for 1000 digits testcase.  
+
 **Convolutional Layer 1**  
 `-clk:` Clock input.  
+
 `-rst_n:` Asynchronous reset signal, active low.  
 `-data_in:` Read the MNIST text file as input, transmit the value of each pixel which ranges from 0 to 255 andrepresented by 8 bits.  
 `-conv_out_#:` The result value of the convolution operation performed by the convolutional layer 1.  

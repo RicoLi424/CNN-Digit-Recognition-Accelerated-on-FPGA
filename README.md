@@ -38,4 +38,5 @@
 **Convolutional Layer 2**  
     **_conv2_buf_** & **_conv2_calc_** share the similar structure with those in Convolutional Layer 1. The only difference is that the input and output size changes and the operation changes to a 3-channel one.
 
-
+**Pooling Layer 2 (Maxpool_relu)**  
+The module structure is also nealy the same as that of pooling layer 1. The only difference is that values of the three module parameters of `HALF_WIDTH`, `HALF_HEIGHT`, and `HALF_WIDTH_BIT` are changed from 12, 12, and 4 to 4, 4, and 3.  

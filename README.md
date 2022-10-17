@@ -1,10 +1,10 @@
 # CNN-Digit-Recognition-on-FPGA
 **_Explanation on .v modules_** 
 
-**top**
+**top**  
 Top module for single digit testcase.
 
-**top_1000**
+**top_1000**  
 Top module for 1000 digits testcase.  
 
 **Convolutional Layer 1**  

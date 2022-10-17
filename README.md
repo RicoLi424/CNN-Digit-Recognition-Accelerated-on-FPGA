@@ -27,7 +27,7 @@
 
      Use the system command $readmemh to read the weights and biases text file and store them in a two-dimensional array. The 25 data output by the Buffer layer in each round is used as the input of the convolution calculation, and the convolution operation is performed with the weight value, and then the bias is added to obtain the output. Although the handwritten digit image is a black and white picture and only needs a single channel, in order to not lose generality and improve accuracy, we still uses three channels to convolve it, so three sets of different weights and convolutions are used for 25 sets of data separately, and three sets of convolution operation outputs are obtained.
      
-**1st Maxpool_relu**  
+**Pooling Layer 1 (Maxpool_relu)**  
 `valid_in:` Connected to the valid output signal of the previous convolutional layer, the module performs two different operations according to the value of `valid_in`.
 `conv_out_#:` Take the 3 12-bit convolution outputs of the previous convolutional layer as input data.
 `max_value_#:` For each maximum pooling operation, the maximum value is selected from a range of (2, 2) in the feature map, and the final output is obtained after passing it through the ReLU function. Because there are 3 channels, there are 3 outputs. .
@@ -35,6 +35,7 @@
 
       Since the filter size is (2, 2), a pooling operation will compare a total of 2×2=4 input data values. Perform segmentation operation according to the two control signals of state and flag, first compare the two data in the first line in (2, 2), and load the larger value into the buffer; then put the second line in (2, 2) A number is compared with the value in the buffer, and the larger value is loaded into the buffer; finally, the last number in (2, 2) is compared with the value in the buffer, and the corresponding operation of ReLU is performed on the larger one, that is If it is a positive value, it will not change, if it is a negative value, let it be 0. Each time a 3-channel 2×2 pooling operation is performed, the output valid_out_relu is 1, and the pooling layer 1 performs a total of 12 3-channel 2×2 pooling operations.
 
-
+**Convolutional Layer 2**  
+    **_conv2_buf_** & **_conv2_calc_** share the similar structure with those in Convolutional Layer 1. The only difference is that the input and output size changes and the operation changes to a 3-channel one.
 
 

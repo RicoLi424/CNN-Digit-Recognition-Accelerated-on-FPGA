@@ -40,3 +40,17 @@
 
 **Pooling Layer 2 (Maxpool_relu)**  
 The module structure is also nealy the same as that of pooling layer 1. The only difference is that values of the three module parameters of `HALF_WIDTH`, `HALF_HEIGHT`, and `HALF_WIDTH_BIT` are changed from 12, 12, and 4 to 4, 4, and 3.  
+
+**Fully Connected Layer (fully_connected)**  
+`valid_in:` It is connected to the valid output signal of the pooling layer 2, and then connected to the enable signal of the last comparison module. When it is 1, it can control the comparison module to load data.  
+`data_in_#:` The maximum value obtained in the range of (2, 2) in the pooling layer 2 each time, after the ReLU function, the sign bit is expanded as the input data of the fully connected layer.  
+`data_out:` The input 48 data, the output value obtained by performing the convolution operation using the weight value and the bias value. Through 10 sets of different weights and biases, 10 sets of different outputs can be obtained, which are used as input into the final Comparison Layer.  
+`valid_out_fc:` Every time you get a `-data_out` output, this signal goes to 1 to enable the compare layer to load this output data.  
+
+  Since the output feature size of pooling layer 2 is (4, 4, 3), a buffer of size 4×4×3=48 needs to be set to store the input data, and 3 data are loaded per clock. In the first 16 clock cycles, waiting for the data to be loaded, `valid_out_fc` remains 0 unchanged. When the loading is completed, the first `data_out` output can be obtained, so at the same time, make `valid_out_fc` become 1, enable the comparison layer, and let the comparison layer load the first output data. In each clock cycle after that, first let `valid_out_fc` return to 0 to prevent the comparison layer from repeatedly loading the last output value before calculating the new output. When a new `data_out` output has been calculated and generated within this clock, `valid_out_fc` is again set to 1 and the compare layer is loaded with this data. After 9 cycles, all 10 output data are generated and loaded into the last comparison layer, and the comparison layer performs comparison operations on them.  
+  
+**Comparison and Output Layer(comparator)**  
+`valid_in:` Connected to the `valid_out_fc` output signal of the fully connected layer. When it is 1, the output data of the fully connected layer is loaded.  
+`data_in:` Connect to the `data_out` of the fully connected layer, and load 10 different data_outs of the fully connected layer in sequence within 10 clock cycles.  
+`decision:` The identification result by CNN's learning process of the input data, the result is a number between 0 and 9.  
+`valid_out:` The output signal that a complete classification operation is completed.  

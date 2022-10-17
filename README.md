@@ -20,10 +20,10 @@
   ![image](https://user-images.githubusercontent.com/114987225/196122412-76ff0154-02db-4937-b13d-5d4ca17f84b8.png)
   
   * **_conv1_calc_**:   
-`valid_in:   Enable signal, connected to valid_out_buf in Buffer module.
-`data_in_#:` The 25 'data_out_#' output by the Buffer module each time.
-`conv_out_#:` After the convolution operation is performed, the convolution output obtained by adding the bias value to the result value. The size of the filter is (5, 5, 3), so there are 3 channels and therefore 3 corresponding output ports. 
-`valid_out_calc:` Connect directly to the 'valid_out_buf' of the Buffer layer as the output.
+`valid_in:`Enable signal, connected to valid_out_buf in Buffer module.  
+`data_in_#:` The 25 'data_out_#' output by the Buffer module each time.  
+`conv_out_#:` After the convolution operation is performed, the convolution output obtained by adding the bias value to the result value. The size of the filter is (5, 5, 3), so there are 3 channels and therefore 3 corresponding output ports.   
+`valid_out_calc:` Connect directly to the 'valid_out_buf' of the Buffer layer as the output.  
 
      Use the system command $readmemh to read the weights and biases text file and store them in a two-dimensional array. The 25 data output by the Buffer layer in each round is used as the input of the convolution calculation, and the convolution operation is performed with the weight value, and then the bias is added to obtain the output. Although the handwritten digit image is a black and white picture and only needs a single channel, in order to not lose generality and improve accuracy, we still uses three channels to convolve it, so three sets of different weights and convolutions are used for 25 sets of data separately, and three sets of convolution operation outputs are obtained.
      

@@ -1,4 +1,4 @@
-# CNN-Digit-Recognition-on-FPGA
+# CNN-Digit-Recognition-Accelerated-on-FPGA
 **_Explanation on .v modules_** 
 
 **top**  
